@@ -12,7 +12,7 @@ Installation
 ================
 I recommend vundle, in your ~/.vimrc:
 ```
-Bundle 'dapplebeforedawn/vim-typing-practice'
+Bundle 'baroldgene/vim-github-links'
 ```
 and then you can :BundleInstall
 
