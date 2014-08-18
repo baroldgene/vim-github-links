@@ -8,5 +8,7 @@ function! GithubLink()
   let output = system('pbcopy', url)
   return url
 endfunction
-nnoremap <leader>gl :echo GithubLink()<cr>
 
+command! GithubLink call s:GithubLink()
+
+nnoremap <leader>gl :echo GithubLink()<cr>
