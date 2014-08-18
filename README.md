@@ -12,15 +12,15 @@ Installation
 ================
 I recommend vundle, in your ~/.vimrc:
 ```
-Bundle 'dapplebeforedawn/vim-typing-practice'
+Bundle 'baroldgene/vim-github-links'
 ```
-and then you can :BundleInstall
+and then you can :PluginInstall
 
 Use
 ================
 Once installed you can use the default hotkey of `<leader>gl` when editing a file.  This craft a github link to the branch, file, and line and put it on your clipboard.  It will also be echoed for you to see.  
 
-
+![https://github.com/baroldgene/vim-github-links/raw/master/Github-Link-Demo.gif](https://github.com/baroldgene/vim-github-links/raw/master/Github-Link-Demo.gif)
 
 
 
