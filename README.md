@@ -14,7 +14,7 @@ I recommend vundle, in your ~/.vimrc:
 ```
 Bundle 'baroldgene/vim-github-links'
 ```
-and then you can :BundleInstall
+and then you can :PluginInstall
 
 Use
 ================
