@@ -7,7 +7,7 @@ function! GithubLink()
   let filename = substitute(filepath, root_directory, "", "g")
   let linenumber = line(".")
   if repo_name =~ 'bitbucket.org'
-    let url = 'https://' . repo_name . '/src/' . git_branch . '/' . filename . "#L" . linenumber
+    let url = 'https://' . repo_name . '/src/' . git_branch . '/' . filename . "#lines-" . linenumber
   else
     let url = 'https://' . repo_name . '/blob/' . git_branch . '/' . filename . "#L" . linenumber
   endif
