@@ -6,7 +6,11 @@ function! GithubLink()
   let filepath = bufname("%")
   let filename = substitute(filepath, root_directory, "", "g")
   let linenumber = line(".")
-  let url = 'https://' . repo_name . '/blob/' . git_branch . '/' . filename . "#L" . linenumber
+  if repo_name =~ 'bitbucket.org'
+    let url = 'https://' . repo_name . '/src/' . git_branch . '/' . filename . "#L" . linenumber
+  else
+    let url = 'https://' . repo_name . '/blob/' . git_branch . '/' . filename . "#L" . linenumber
+  endif
   let output = system('pbcopy', url)
   return url
 endfunction
